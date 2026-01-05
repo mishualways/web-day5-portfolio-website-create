@@ -120,6 +120,7 @@ nav .menu a {
     line-height: 30px;
     margin-bottom: 30px;
 }
+
 .banner .banner-image img {
     display: block;
     max-width: 585px;
@@ -161,13 +162,72 @@ nav .menu a {
     font-weight: 700;
     color: #474747;
 }
-
-.what-i-do{
-    width: 50%;
-    max-width: 827px;
-    margin: 0px auto;
-    padding-top: 130px;
+.skill{
+     padding-top: 130px;
 }
+.skill .skill-container{
+    width: 70%;
+    max-width: 1140px;
+    margin: 0px auto;
+    /* padding: 130px 156px; */
+}
+.skill .skill-container .section-heading{
+    margin: 0px auto;
+}
+.skil-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.skil-info .skil-card{
+    max-width: 267px;
+    text-align: left;
+    padding: 33px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px #00000015;
+    background-color: #FFFFFF;
+}
+.skil-info .skil-card h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: #181818;
+    padding-top: 30px;
+}
+.skil-info .skil-card p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #181818;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
