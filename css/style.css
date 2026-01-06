@@ -2,17 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
-/* shared Style */
+/*! shared Style */
 .font-family {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
 }
 
+nav,
+.skill .skill-container,
+.about .about-container,
+.resume-container {
+    width: 70%;
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
 .logo h2 {
     font-size: 45px;
-    font-weight: 900;
+    font-weight: 700;
     color: #181818;
 }
 
@@ -32,36 +42,38 @@
     font-weight: 500;
 }
 
-.section-heading{
+.section-heading {
     max-width: 827px;
     text-align: center;
+    margin: 0px auto;
 }
-.section-heading h2{
+
+.section-heading h2 {
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 30px;
     color: #181818;
 }
-.section-heading p{
+
+.section-heading p {
     font-size: 18px;
-   line-height: 30px;
-   color: #757575;
+    line-height: 30px;
+    color: #757575;
 }
 
 
 
-/* main style */
+/*! main style */
+
+/* header sectipn */
 header {
-    background: url(../images/developer.png), url(../images/header_bg.png) #FFF8F3 ;
+    background: url(../images/developer.png), url(../images/header_bg.png) #FFF8F3;
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     padding-top: 50px;
 }
 
 nav {
-    width: 70%;
-    max-width: 1140px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +93,7 @@ nav .menu a {
     /* color: #474747; */
 }
 
-
+/* banner section */
 .banner {
     margin: 46px 38px 38px 196px;
     display: flex;
@@ -108,7 +120,7 @@ nav .menu a {
 
 .banner .banner-content h1 {
     font-size: 85px;
-    font-weight: 900;
+    font-weight: 700;
     color: #181818;
     margin-bottom: 20px;
 
@@ -127,15 +139,12 @@ nav .menu a {
     /* vertical-align: middle; */
 }
 
-
-.about{
+/* about section */
+.about {
     padding-top: 90px;
 }
 
-.about .about-container{
-    width: 70%;
-    max-width: 1140px;
-    margin: 0px auto;
+.about .about-container {
     padding: 130px 156px;
     text-align: center;
     border: none;
@@ -144,37 +153,33 @@ nav .menu a {
 }
 
 
-.about .about-container .about-info{
+.about .about-container .about-info {
     padding-top: 30px;
     display: flex;
     gap: 30px;
     align-items: center;
     justify-content: space-around;
 }
-.about .about-container .about-info p{
+
+.about .about-container .about-info p {
     font-size: 20px;
     line-height: 50px;
     color: #757575;
 }
-.about .about-container .about-info h4{
+
+.about .about-container .about-info h4 {
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
     color: #474747;
 }
-.skill{
-     padding-top: 130px;
+
+/* skil section */
+.skill {
+    padding-top: 130px;
 }
-.skill .skill-container{
-    width: 70%;
-    max-width: 1140px;
-    margin: 0px auto;
-    /* padding: 130px 156px; */
-}
-.skill .skill-container .section-heading{
-    margin: 0px auto;
-}
-.skil-info{
+
+.skil-info {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -182,28 +187,79 @@ nav .menu a {
     padding-bottom: 40px;
 }
 
-.skil-info .skil-card{
+.skil-info .skil-card {
     max-width: 267px;
     text-align: left;
     padding: 33px;
     border: none;
     border-radius: 5px;
-    box-shadow: 0px 6px 50px #00000015;
+    box-shadow: 0px 6px 50px 0 #00000015;
     background-color: #FFFFFF;
 }
-.skil-info .skil-card h5{
+
+.skil-info .skil-card img {
+    max-width: 44px;
+}
+
+.skil-info .skil-card h5 {
     font-size: 20px;
     font-weight: 700;
     color: #181818;
     padding-top: 30px;
 }
-.skil-info .skil-card p{
+
+
+.skil-info .skil-card p {
     font-size: 16px;
     line-height: 28px;
     color: #181818;
     padding-top: 20px;
 }
 
+
+/* Resume Section */
+.resume {
+    padding-top: 130px;
+}
+
+
+.resume .resume-info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 71px;
+    flex-wrap: wrap;
+    padding-top: 130px;
+}
+
+.resume .resume-info h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+    margin-bottom: 30px;
+}
+.resume .resume-info h4 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #474747;
+    margin-bottom: 10px;
+}
+.resume .resume-info h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #757575;
+    margin-bottom: 20px;
+}
+.resume .resume-info p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.resume .resume-info .resume-card {
+    max-width: 511px;
+    border-bottom: 2px solid #D1D1D1;
+}
 
 
 
