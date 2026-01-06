@@ -1,3 +1,6 @@
+/* font awsome icon  */
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +44,13 @@ nav,
     cursor: pointer;
     font-size: 20px;
     font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: transparent;
+    border: 2px solid red;
+    color: red !important;
 }
 
 .section-heading {
@@ -70,7 +80,7 @@ nav,
 header {
     background: url(../images/developer.png), url(../images/header_bg.png) #FFF8F3;
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
+    background-position: 23px 38px, bottom right;
     padding-top: 50px;
 }
 
@@ -92,6 +102,9 @@ nav .menu a {
     font-size: 20px;
     font-weight: 500;
     /* color: #474747; */
+}
+nav .menu a:hover {
+    color: #FD6E0A;
 }
 
 /* banner section */
@@ -132,6 +145,23 @@ nav .menu a {
     color: #757575;
     line-height: 30px;
     margin-bottom: 30px;
+}
+.banner-content-button{
+    display: flex;
+    gap: 30px;
+}
+
+.banner-content-button a:last-child {
+    background: transparent;
+    border: 2px solid red;
+    color: #FD6E0A !important;
+    transition: 0.3s;
+}
+
+.banner-content-button a:last-child:hover {
+    background-color:#FD6E0A ;
+    border: none;
+    color: white !important;
 }
 
 .banner .banner-image img {
@@ -310,12 +340,11 @@ footer {
 
 .footer-container .form {
     display: flex;
-    /* max-width: 461px; */
     justify-content: left;
     flex-direction: column;
 }
 
-.footer-container .form input {
+.footer-container .form input[type="text"],[type="email"]{
     width: 440px;
     padding: 25px 30px;
     border-radius: 5px;
@@ -338,6 +367,11 @@ footer {
     margin-bottom: 24px;
     padding: 0px 30px;
     outline: none;
+}
+
+.footer-container .form .form-btn{
+    max-width: 150px;
+    padding:20px 40px;
 }
 
 .footer-container .form textarea::placeholder {
@@ -386,8 +420,3 @@ footer {
 
 
 
-.banner-content-button a:last-child {
-    background: transparent;
-    border: 1px solid red;
-    color: #FD6E0A !important;
-}
